@@ -1,4 +1,4 @@
-package com.matraex.Deeptruth.Android.DeepTruthAndroid.TestBase;
+package com.matraex.Deeptruth.Android.DeepTruthAndroid.SplashActivity;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class Base {
+public class SplashScreen {
 	protected static  WebDriver driver;
 	//To create an object of Desired Capabilities
 	  protected DesiredCapabilities caps = new DesiredCapabilities();
@@ -59,6 +59,7 @@ public class Base {
 	
 	@AfterTest
 	public void close() {
+//		driver.close();
 		
 	}
 }

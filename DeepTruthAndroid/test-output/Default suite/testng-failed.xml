@@ -5,9 +5,9 @@
     <classes>
       <class name="com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList">
         <methods>
-          <include name="setup"/>
           <include name="medialistAllMedia"/>
           <include name="close"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList -->
     </classes>

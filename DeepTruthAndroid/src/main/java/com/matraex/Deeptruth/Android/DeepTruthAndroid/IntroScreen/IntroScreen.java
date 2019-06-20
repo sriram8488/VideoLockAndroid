@@ -1,8 +1,8 @@
-package com.matraex.Deeptruth.Android.DeepTruthAndroid.SplashActivity;
+package com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen;
 
 import org.testng.annotations.Test;
 
-import com.matraex.Deeptruth.Android.DeepTruthAndroid.TestBase.Base;
+
 import com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.VideoRecording;
 
 import io.appium.java_client.MobileBy;
@@ -20,10 +20,10 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 
-public class SplashactivityPage extends Base{
+public class IntroScreen extends com.matraex.Deeptruth.Android.DeepTruthAndroid.SplashActivity.SplashScreen{
 	
   
-@Test
+@Test(priority=0)
   public void splashActivityScreeen() throws InterruptedException, IOException {
 	
 	  driver.findElement(By.id("btn_start_record")).click(); // for RECORD NOW button
