@@ -25,18 +25,19 @@ public class IntroScreen extends com.matraex.Deeptruth.Android.DeepTruthAndroid.
   
 @Test(priority=0)
   public void splashActivityScreeen() throws InterruptedException, IOException {
-	
-	  driver.findElement(By.id("btn_start_record")).click(); // for RECORD NOW button
-	 Thread.sleep(5000);
+		// for RECORD NOW button
+	driver.findElement(By.id("btn_start_record")).click(); 
+	Thread.sleep(5000);
 	  
       for(int i=1; i<=4; i++)
 		  {
-		  driver.findElement(MobileBy.id("com.android.packageinstaller:id/permission_allow_button")).click(); //allow buttons to access everything on deice
+    	  //allow buttons to access everything on device
+		  driver.findElement(MobileBy.id("com.android.packageinstaller:id/permission_allow_button")).click(); 
 		  } 
-    
-		  driver.findElement(MobileBy.id("txt_allow")).click(); // allowing location
-    
-		 driver.findElement(MobileBy.id("com.android.packageinstaller:id/permission_allow_button")).click(); // allow to record
+      		// allowing location
+		  driver.findElement(MobileBy.id("txt_allow")).click(); 
+		  // allow to record
+		 driver.findElement(MobileBy.id("com.android.packageinstaller:id/permission_allow_button")).click(); 
 		  
 	   }
    

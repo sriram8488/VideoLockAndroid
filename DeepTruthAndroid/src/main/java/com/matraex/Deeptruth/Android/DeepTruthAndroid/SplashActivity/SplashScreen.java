@@ -20,10 +20,10 @@ public class SplashScreen {
 	@BeforeTest
 	  public void setup() throws MalformedURLException {
 		
-		//To Setup the device name and Id
+		//To Setup the device name and Id which we will get from the cmd prompt after entering "adb devices"
 		  caps.setCapability("deviceName", "device");
 		  caps.setCapability("deviceid","Z55DRCKRZHDMA6BU");
-		  
+		// to set the platform name and version we will use  
 		  caps.setCapability("platformName", "Android");
 		  caps.setCapability("platformVersion", "6.0");
 		//set the package of the app
@@ -41,7 +41,7 @@ public class SplashScreen {
 			
 			//To Setup the device name and Id
 			  caps.setCapability("deviceName", "device");
-			  caps.setCapability("deviceid","Z55DRCKRZHDMA6BU");
+			  caps.setCapability("deviceid","ZY32287TKD");
 			  
 			  caps.setCapability("platformName", "Android");
 			  caps.setCapability("platformVersion", "8.1.0");

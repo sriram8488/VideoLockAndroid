@@ -11,22 +11,23 @@ public class Drawer extends SplashScreen {
 	//static WebDriver driver;
 	
 	public static void openDrawer() {
-		driver.findElement(By.id("img_lefthandle")).click();// open drawer
+		// open drawer
+		driver.findElement(By.id("img_lefthandle")).click();
 		
 	}
 	public static void closeDrawer() {	
-		
-		driver.findElement(By.id("img_righthandle")).click();// close drawer
+		// close drawer
+		driver.findElement(By.id("img_righthandle")).click();
 	}
 	public static void swipeVertically() throws InterruptedException {
-		//TouchAction act=new TouchAction((MobileDriver) driver).press(startx, starty).waitAction().moveTo(endx, endy).release().perform();
+		
 		for(int i=0; i<=9; i++) {
 		Dimension size=driver.manage().window().getSize();
 		int width=(int)(size.width/2);
 		int startPoint=(int)(size.getHeight() * 0.70);
-		//System.out.println("started moving"+  startPoint);
+		
 		int endPoint=(int)(size.getHeight() * 0.20);
-		//System.out.println("stopped moving"+ endPoint);
+		
 		int duration=1000;
 		((TouchShortcuts) driver).swipe(width, startPoint, width, endPoint, duration);
 		}
