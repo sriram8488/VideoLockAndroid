@@ -3,10 +3,12 @@ package com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.matraex.Deeptruth.Android.DeepTruthAndroid.SettingScreen.Setting;
+
 import io.appium.java_client.MobileElement;
 
 public class MediaList extends VideoRecording {
-	@Test(priority=2,enabled=true)
+	@Test(enabled=true)//priority=2,
 	public void medialistAllMedia() throws InterruptedException {
 
 		Thread.sleep(5000);
@@ -31,12 +33,22 @@ public class MediaList extends VideoRecording {
 		driver.findElement(By.id("tv_positive")).click();
 		// Click on back button to go back to All Media 
 		driver.findElement(By.id("img_arrow_back")).click();
-		//click on the camera
+		// finish the work in setting page
+		Setting.settings();
 		/// click on the video	
 //		driver.findElement(By.id("img_videothumbnail")).click();
 		
-		// click on the video play button
-//		driver.findElement(By.id("com.deeptruth.app.reader.android:id/img_btn_playpause")).click();
+		
+		
+		
+		
+		
+		//click on the camera
+		driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id,'img_camera')and @index='0']")).click();
+		
+		
+		
+	
 		
 		
 	}

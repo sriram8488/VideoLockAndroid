@@ -9,7 +9,7 @@ import com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen;
 
 public class VideoRecording extends IntroScreen {
 	
-	@Test(priority=1,enabled=false)
+	@Test(enabled=false)//priority=1,
 	public void videoRecord() throws InterruptedException, IOException {
 		
 //		Drawer.openSwipeClose();
