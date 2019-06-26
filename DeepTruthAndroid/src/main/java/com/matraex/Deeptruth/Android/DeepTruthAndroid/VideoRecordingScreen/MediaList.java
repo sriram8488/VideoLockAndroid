@@ -1,23 +1,36 @@
 package com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.testng.annotations.Test;
 
+import com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen;
+import com.matraex.Deeptruth.Android.DeepTruthAndroid.LginScreen.LoginPage;
 import com.matraex.Deeptruth.Android.DeepTruthAndroid.SettingScreen.Setting;
+import com.matraex.Deeptruth.Android.DeepTruthAndroid.SplashActivity.SplashScreen;
 
-import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchShortcuts;
 
-public class MediaList extends VideoRecording {
-	@Test(enabled=true)//priority=2,
-	public void medialistAllMedia() throws InterruptedException {
+public class MediaList extends IntroScreen {
+	@Test(priority=1,enabled=true)//priority=2,
+	public void medialistAllMedia() throws InterruptedException, IOException {
+		
+		Drawer.openSwipeClose();
+		
+		VideoRecording.startVideoRecord();
 
 		Thread.sleep(5000);
+		VideoRecording.stoptVideoRecord();
+		Thread.sleep(3000);
 		
 		// click on media thumb nail
+
 		driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id,'img_mediathumbnail') and @index='0']")).click();
 		Thread.sleep(5000);
 
-		
+		/*
 		// click to see the grid view
 		driver.findElement(By.id("lay_gridstyle")).click(); 
 		
@@ -37,20 +50,45 @@ public class MediaList extends VideoRecording {
 		Setting.settings();
 		/// click on the video	
 //		driver.findElement(By.id("img_videothumbnail")).click();
+ * */
+ 
+	// slide a video from right to left
+		Dimension size = driver.manage().window().getSize();
+		  System.out.println(size);
+		  int startx = (int) (size.width * 0.70);
+		 int endx = (int) (size.width * 0.20);
+		int  starty = size.height /3;
+		  System.out.println("Start swipe operation");
+		  int timeduration = 3000;
+		((TouchShortcuts) driver).swipe(startx, starty, endx, starty, timeduration );
+		
+		// click on share button 
+		driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id, 'img_slide_share') and @index= '0']")).click();
+		
+		//click on private
+		driver.findElement(By.xpath("//android.widget.LinearLayout[contains(@resource-id,'linear_share_btn1')]")).click();
+		
+		LoginPage.login();
 		
 		
 		
+		 
 		
 		
 		
 		//click on the camera
-		driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id,'img_camera')and @index='0']")).click();
-		
-		
+//		driver.findElement(By.xpath("//android.widget.ImageView[contains(@resource-id,'img_camera')and @index='0']")).click();
+	}
+
+		public void rightLeftSwipe(int timeduration) {
+
+			 
+
+			 }	
 		
 	
 		
 		
 	}
 
-}
+

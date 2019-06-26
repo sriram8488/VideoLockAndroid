@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.android.AndroidDriver;
 
 public class SplashScreen {
-	protected static  WebDriver driver;
+	protected static   WebDriver driver;
 	//To create an object of Desired Capabilities
 	  protected DesiredCapabilities caps = new DesiredCapabilities();
 	
@@ -33,7 +34,7 @@ public class SplashScreen {
 		
 		//driver object with new Url and Capabilities
 		  driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),caps);
-		//WebDriver driver = new RemoteWebDriver (new URL("http://0.0.0.0:4723/wd/hub"),caps);
+		// driver = new RemoteWebDriver (new URL("http://0.0.0.0:4723/wd/hub"),caps);
 		//AndroidDriver<MobileElement>driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
