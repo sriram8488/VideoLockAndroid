@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList">
+      <class name="com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen">
         <methods>
-          <include name="medialistAllMedia"/>
           <include name="close"/>
+          <include name="splashActivityScreeen"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList -->
+      </class> <!-- com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

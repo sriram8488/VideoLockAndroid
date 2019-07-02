@@ -33,10 +33,18 @@ public class Drawer extends SplashScreen {
 		((TouchShortcuts) driver).swipe(width, startPoint, width, endPoint, duration);
 		}
 	}
-	public static void openSwipeClose() throws InterruptedException {
-		openDrawer();
-		swipeVertically();
-		closeDrawer();
+public static void swipeHorizontally() throws InterruptedException {
 		
+		
+		for(int i=0; i<=12; i++) {
+		Dimension size=driver.manage().window().getSize();
+		int width=(int)(size.width/2);
+		int startPoint=(int)(size.getHeight() * 0.100);
+		
+		int endPoint=(int)(size.getHeight() * 0.0);
+		
+		int duration=300;
+		((TouchShortcuts) driver).swipe(width, startPoint, width, endPoint, duration);
+		}
 	}
 }

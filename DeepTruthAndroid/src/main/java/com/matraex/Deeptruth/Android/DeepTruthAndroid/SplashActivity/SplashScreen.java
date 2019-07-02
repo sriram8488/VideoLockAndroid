@@ -6,20 +6,15 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import io.appium.java_client.android.AndroidDriver;
 
 public class SplashScreen {
 	protected static   WebDriver driver;
 	//To create an object of Desired Capabilities
-	  protected DesiredCapabilities caps = new DesiredCapabilities();
+	  protected static DesiredCapabilities caps = new DesiredCapabilities();
 	
-	@BeforeTest
-	  public void setup() throws MalformedURLException {
+	
+	  public static void setup() throws MalformedURLException {
 		
 		//To Setup the device name and Id which we will get from the cmd prompt after entering "adb devices"
 		  caps.setCapability("deviceName", "device");
@@ -27,6 +22,7 @@ public class SplashScreen {
 		// to set the platform name and version we will use  
 		  caps.setCapability("platformName", "Android");
 		  caps.setCapability("platformVersion", "6.0");
+		 // ((AppiumDriver) driver).installApp("/home/mataraex/Downloads/app-composer-2019-07-01.apk");
 		//set the package of the app
 		  caps.setCapability("appPackage", "com.deeptruth.app.composer.android");
 		// set the launcher activity of the app
@@ -58,9 +54,5 @@ public class SplashScreen {
 			  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  }*/
 	
-	@AfterTest
-	public void close() {
-//		driver.close();
-		
-	}
+	
 }

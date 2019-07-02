@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="146002" started-at="2019-06-26T13:46:36Z" finished-at="2019-06-26T13:49:02Z">
+  <suite name="Default suite" duration-ms="105246" started-at="2019-07-02T10:44:55Z" finished-at="2019-07-02T10:46:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="146002" started-at="2019-06-26T13:46:36Z" finished-at="2019-06-26T13:49:02Z">
-      <class name="com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList@7a30d1e6]" name="setup" is-config="true" duration-ms="21877" started-at="2019-06-26T13:46:36Z" finished-at="2019-06-26T13:46:57Z">
+    <test name="Default test" duration-ms="105246" started-at="2019-07-02T10:44:55Z" finished-at="2019-07-02T10:46:40Z">
+      <class name="com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen@553a3d88]" name="setup" is-config="true" duration-ms="33485" started-at="2019-07-02T10:44:55Z" finished-at="2019-07-02T10:45:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="splashActivityScreeen()[pri:0, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList@7a30d1e6]" name="splashActivityScreeen" duration-ms="34990" started-at="2019-06-26T13:46:57Z" finished-at="2019-06-26T13:47:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- splashActivityScreeen -->
-        <test-method status="FAIL" signature="medialistAllMedia()[pri:1, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList@7a30d1e6]" name="medialistAllMedia" duration-ms="89120" started-at="2019-06-26T13:47:32Z" finished-at="2019-06-26T13:49:02Z">
+        <test-method status="FAIL" signature="splashActivityScreeen()[pri:0, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen@553a3d88]" name="splashActivityScreeen" duration-ms="71748" started-at="2019-07-02T10:45:28Z" finished-at="2019-07-02T10:46:40Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.13 seconds
+Command duration or timeout: 30.24 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'mataraex-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-52-generic', java.version: '1.8.0_212'
+System info: host: 'mataraex-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-54-generic', java.version: '1.8.0_212'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.deeptruth.app.composer.android, deviceScreenSize=480x800, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=Z55DRCKRZHDMA6BU, deviceid=Z55DRCKRZHDMA6BU, platform=LINUX, deviceUDID=Z55DRCKRZHDMA6BU, appActivity=com.deeptruth.app.android.activity.splashactivity, desired={appPackage=com.deeptruth.app.composer.android, appActivity=com.deeptruth.app.android.activity.splashactivity, platformVersion=6.0, platformName=Android, deviceName=device, deviceid=Z55DRCKRZHDMA6BU}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Konnect_Star, platformName=Android, deviceManufacturer=Swipe}]
-Session ID: 73571749-a638-446e-ae2d-4f887f79b1cb
-*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@resource-id,'createaccount')]}]]>
+Session ID: 1ca548cf-330d-43d2-9c0a-3a4705297239
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@resource-id, 'message')]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.13 seconds
+Command duration or timeout: 30.24 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'mataraex-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-52-generic', java.version: '1.8.0_212'
+System info: host: 'mataraex-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-54-generic', java.version: '1.8.0_212'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.deeptruth.app.composer.android, deviceScreenSize=480x800, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=Z55DRCKRZHDMA6BU, deviceid=Z55DRCKRZHDMA6BU, platform=LINUX, deviceUDID=Z55DRCKRZHDMA6BU, appActivity=com.deeptruth.app.android.activity.splashactivity, desired={appPackage=com.deeptruth.app.composer.android, appActivity=com.deeptruth.app.android.activity.splashactivity, platformVersion=6.0, platformName=Android, deviceName=device, deviceid=Z55DRCKRZHDMA6BU}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Konnect_Star, platformName=Android, deviceManufacturer=Swipe}]
-Session ID: 73571749-a638-446e-ae2d-4f887f79b1cb
-*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@resource-id,'createaccount')]}
+Session ID: 1ca548cf-330d-43d2-9c0a-3a4705297239
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@resource-id, 'message')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -61,8 +57,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at com.matraex.Deeptruth.Android.DeepTruthAndroid.LginScreen.LoginPage.login(LoginPage.java:17)
-at com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList.medialistAllMedia(MediaList.java:71)
+at com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen.splashActivityScreeen(IntroScreen.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,12 +88,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- medialistAllMedia -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList@7a30d1e6]" name="close" is-config="true" duration-ms="0" started-at="2019-06-26T13:49:02Z" finished-at="2019-06-26T13:49:02Z">
+        </test-method> <!-- splashActivityScreeen -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen@553a3d88]" name="close" is-config="true" duration-ms="0" started-at="2019-07-02T10:46:40Z" finished-at="2019-07-02T10:46:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.MediaList -->
+      </class> <!-- com.matraex.Deeptruth.Android.DeepTruthAndroid.IntroScreen.IntroScreen -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
