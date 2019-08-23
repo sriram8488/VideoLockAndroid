@@ -15,11 +15,13 @@ import com.matraex.Deeptruth.Android.DeepTruthAndroid.VideoRecordingScreen.Video
 
 public class NewTest {
   @BeforeTest
-  public void launch() throws MalformedURLException {
+  public void launch() throws Exception  {
 	  SplashScreen.setup();
 	 }
   @Test
-  public void initro() {
+  public void initro() throws InterruptedException {
+	  Thread.sleep(3000);
+	  IntroScreen.swipeIntroscreen();
 	  IntroScreen.recordNowButton();
 	  IntroScreen.clickOnAllowButtons();
 	  IntroScreen.clickOnAllowLocation();
@@ -48,7 +50,7 @@ public class NewTest {
 	  MediaList.clickOnMediaThumbnail();
 	 
   }
-  @Test
+  @Test(enabled=false)
   public void allMedia() {
 	  MediaList.clickOnGridView();
 	  MediaList.clickOnListView();

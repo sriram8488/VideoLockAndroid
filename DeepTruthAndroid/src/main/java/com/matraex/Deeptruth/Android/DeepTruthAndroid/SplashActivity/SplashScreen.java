@@ -1,5 +1,6 @@
 package com.matraex.Deeptruth.Android.DeepTruthAndroid.SplashActivity;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,7 @@ public class SplashScreen {
 	  protected static DesiredCapabilities caps = new DesiredCapabilities();
 	
 	
-	  public static void setup() throws MalformedURLException {
+	 /* public static void setup() throws MalformedURLException {
 		
 		//To Setup the device name and Id which we will get from the cmd prompt after entering "adb devices"
 		  caps.setCapability("deviceName", "device");
@@ -33,9 +34,8 @@ public class SplashScreen {
 		// driver = new RemoteWebDriver (new URL("http://0.0.0.0:4723/wd/hub"),caps);
 		//AndroidDriver<MobileElement>driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  }
-	/* public void setup() throws MalformedURLException {
-			
+	  }*/
+	 public static void setup() throws MalformedURLException {
 			//To Setup the device name and Id
 			  caps.setCapability("deviceName", "device");
 			  caps.setCapability("deviceid","ZY32287TKD");
@@ -52,7 +52,13 @@ public class SplashScreen {
 			//WebDriver driver = new RemoteWebDriver (new URL("http://0.0.0.0:4723/wd/hub"),caps);
 			//AndroidDriver<MobileElement>driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 			  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  }*/
-	
+		  }
+	/*public void set() {
+		String a =caps.getCapability("deviceName").toString();
+		String b =caps.getCapability("CapabilityType.VERSION").toString();
+		System.out.println(a);
+		System.out.println(b);
+
+	}*/
 	
 }

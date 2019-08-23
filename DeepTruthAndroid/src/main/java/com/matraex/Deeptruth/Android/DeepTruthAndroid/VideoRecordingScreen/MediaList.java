@@ -48,18 +48,14 @@ public class MediaList extends IntroScreen {
 		// click on the video	
 		driver.findElement(By.id("img_videothumbnail")).click();
 		}
-
-		public static void swipefromRightToLeft() {
-	 	// slide a video from right to left
-		Dimension size = driver.manage().window().getSize();
-		  System.out.println(size);
-		  int startx = (int) (size.width * 0.70);
-		 int endx = (int) (size.width * 0.20);
-		int  starty = size.height /3;
-		  System.out.println("Start swipe operation");
-		  int timeduration = 3000;
-		((TouchShortcuts) driver).swipe(startx, starty, endx, starty, timeduration );
+		 public void swipefromLeftToRight() {
+			 swipefromLeftToRight();
 		}
+
+		 public static void swipefromRightToLeft() {
+			 swipefromRightToLeft();
+		}
+		 
 		
 		public static void clickOnShareButton() {
 		// click on share button 
